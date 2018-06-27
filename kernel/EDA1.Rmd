@@ -1,0 +1,534 @@
+---
+title: ""
+author: ""
+date: "13 Juni 2018"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: rows
+---
+
+```{r setup, include=FALSE}
+#spacelab, lumen, united, 
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.width = 22, fig.height = 11)
+```
+
+```{r}
+library(ggthemes)
+library(tidyverse)
+library(glue)
+```
+```{r}
+
+#theme_set(theme_tufte() +
+#      theme(text = element_text(size=18), axis.ticks.y=element_blank()))
+```
+
+
+```{r}
+fifa_squads<-read_csv('../input/2018-fifa-world-cup-squads/2018 FIFA World Cup Squads.csv')
+fifa_players<-read_csv('../input/fifa-world-cup-2018-players/wc2018-players.csv')
+fifa18 <- read_csv('../input/ea-fifa18/FIFA18v2.csv')
+fifa18_ids <- read_csv('../input/2018-fifa-world-cup-squads/fifa18_ids2.csv')
+
+
+fifa_squads$Player <- str_replace(fifa_squads$Player, fixed(' (captain)'), '')
+fifa_players$Team <- as.character(fifa_players$Team)
+fifa_squads$Team <- as.character(fifa_squads$Team)
+fifa_squads$Player <- as.character(fifa_squads$Player)
+
+
+fifa_players$BMI <- round(fifa_players$Weight/ ((fifa_players$Height/100) * (fifa_players$Height/100)),2)
+
+fifa_players$Team <- ifelse(fifa_players$Team =='IR Iran','Iran',fifa_players$Team)
+fifa_players$Team <- ifelse(fifa_players$Team =='Korea Republic','South Korea',fifa_players$Team)
+fifa18$Nationality <- ifelse(fifa18$Nationality =='Korea Republic','South Korea',fifa18$Nationality)
+
+players <- left_join(fifa_squads %>% select(-Club), 
+                          fifa_players %>% select(`Shirt Name`, Club, Height, Weight,`#`,Team,BMI) %>% rename(`Squad Number` = `#`), 
+                          by=c('Team','Squad Number'))
+players <- left_join(players, fifa18_ids %>% select(id,Name), by=c("Player"="Name"))
+players <- left_join(players, fifa18 %>% select(-Name), by='id')
+
+
+players <- players %>%
+           mutate(is.same.country=(Team==Nationality))
+players <- unique(players)
+
+
+replace.na <- function(group){
+   return(group %>%
+             mutate(Overall= ifelse(is.na(Overall), mean(Overall, na.rm=TRUE), Overall), 
+                                 `Value`= ifelse(is.na(`Value`), mean(`Value`, na.rm=TRUE),`Value`),
+                    `Wage`= ifelse(is.na(`Wage`), mean(`Wage`, na.rm=TRUE),`Wage`),
+                    `Special`= ifelse(is.na(`Special`), mean(`Special`, na.rm=TRUE),`Special`),
+                    `Acceleration`= ifelse(is.na(`Acceleration`), mean(`Acceleration`, na.rm=TRUE),`Acceleration`),
+                    `Aggression`= ifelse(is.na(`Aggression`), mean(`Aggression`, na.rm=TRUE),`Aggression`),
+                    `Agility`= ifelse(is.na(`Agility`), mean(`Agility`, na.rm=TRUE),`Agility`),
+                    `Balance`= ifelse(is.na(`Balance`), mean(`Balance`, na.rm=TRUE),`Balance`),
+                    `Ball Control`= ifelse(is.na(`Ball Control`), mean(`Ball Control`, na.rm=TRUE),`Ball Control`),
+                    `Composure`= ifelse(is.na(`Composure`), mean(`Composure`, na.rm=TRUE),`Composure`),
+                    `Crossing`= ifelse(is.na(`Crossing`), mean(`Crossing`, na.rm=TRUE),`Crossing`),
+                    `Curve`= ifelse(is.na(`Curve`), mean(`Curve`, na.rm=TRUE),`Curve`),
+                    `Dribbling`= ifelse(is.na(`Dribbling`), mean(`Dribbling`, na.rm=TRUE),`Dribbling`),
+                    `FK Accuracy`= ifelse(is.na(`FK Accuracy`), mean(`FK Accuracy`, na.rm=TRUE),`FK Accuracy`),
+                    `Finishing`= ifelse(is.na(`Finishing`), mean(`Finishing`, na.rm=TRUE),`Finishing`),
+                    `GK Diving`= ifelse(is.na(`GK Diving`), mean(`GK Diving`, na.rm=TRUE),`GK Diving`),
+                    `GK Handling`= ifelse(is.na(`GK Handling`), mean(`GK Handling`, na.rm=TRUE),`GK Handling`),
+                    `GK Kicking`= ifelse(is.na(`GK Kicking`), mean(`GK Kicking`, na.rm=TRUE),`GK Kicking`),
+                    `GK Positioning`= ifelse(is.na(`GK Positioning`), mean(`GK Positioning`, na.rm=TRUE),`GK Positioning`),
+                    `GK Reflexes`= ifelse(is.na(`GK Reflexes`), mean(`GK Reflexes`, na.rm=TRUE),`GK Reflexes`),
+                    `Heading Accuracy`= ifelse(is.na(`Heading Accuracy`), mean(`Heading Accuracy`, na.rm=TRUE),`Heading Accuracy`),
+                    `Interceptions`= ifelse(is.na(`Interceptions`), mean(`Interceptions`, na.rm=TRUE),`Interceptions`),
+                    `Jumping`= ifelse(is.na(`Jumping`), mean(`Jumping`, na.rm=TRUE),`Jumping`),
+                    `Long Passing`= ifelse(is.na(`Long Passing`), mean(`Long Passing`, na.rm=TRUE),`Long Passing`),
+                    `Long Shots`= ifelse(is.na(`Long Shots`), mean(`Long Shots`, na.rm=TRUE),`Long Shots`),
+                    `Marking`= ifelse(is.na(`Marking`), mean(`Marking`, na.rm=TRUE),`Marking`),
+                    `Penalties`= ifelse(is.na(`Penalties`), mean(`Penalties`, na.rm=TRUE),`Penalties`),
+                    `Positioning`= ifelse(is.na(`Positioning`), mean(`Positioning`, na.rm=TRUE),`Positioning`),
+                    `Reactions`= ifelse(is.na(`Reactions`), mean(`Reactions`, na.rm=TRUE),`Reactions`),
+                    `Short Passing`= ifelse(is.na(`Short Passing`), mean(`Short Passing`, na.rm=TRUE),`Short Passing`),
+                    `Shot Power`= ifelse(is.na(`Shot Power`), mean(`Shot Power`, na.rm=TRUE),`Shot Power`),
+                    `Sliding Tackle`= ifelse(is.na(`Sliding Tackle`), mean(`Sliding Tackle`, na.rm=TRUE),`Sliding Tackle`),
+                    `Sprint Speed`= ifelse(is.na(`Sprint Speed`), mean(`Sprint Speed`, na.rm=TRUE),`Sprint Speed`),
+                    `Stamina`= ifelse(is.na(`Stamina`), mean(`Stamina`, na.rm=TRUE),`Stamina`),
+                    `Standing Tackle`= ifelse(is.na(`Standing Tackle`), mean(`Standing Tackle`, na.rm=TRUE),`Standing Tackle`),
+                    `Strength`= ifelse(is.na(`Strength`), mean(`Strength`, na.rm=TRUE),`Strength`),
+                    `Vision`= ifelse(is.na(`Vision`), mean(`Vision`, na.rm=TRUE),`Vision`),
+                    `Volleys`= ifelse(is.na(`Volleys`), mean(`Volleys`, na.rm=TRUE),`Volleys`)) %>% ungroup())
+}
+
+summarize.metrics <- function(group){
+  return (group %>% 
+           summarize(`Overall`=mean(`Overall`),
+                    `Value`=sum(`Value`),
+                    `Wage`=mean(`Wage`),
+                    `Special`=mean(`Special`),
+                    `Acceleration`=mean(`Acceleration`),
+                    `Aggression`=mean(`Aggression`),
+                    `Agility`=mean(`Agility`),
+                    `Balance`=mean(`Balance`),
+                    `Ball Control`=mean(`Ball Control`),
+                    `Composure`=mean(`Composure`),
+                    `Crossing`=mean(`Crossing`),
+                    `Curve`=mean(`Curve`),
+                    `Dribbling`=mean(`Dribbling`),
+                    `FK Accuracy`=mean(`FK Accuracy`),
+                    `Finishing`=mean(`Finishing`),
+                    `GK Diving`=mean(`GK Diving`),
+                    `GK Handling`=mean(`GK Handling`),
+                    `GK Kicking`=mean(`GK Kicking`),
+                    `GK Positioning`=mean(`GK Positioning`),
+                    `GK Reflexes`=mean(`GK Reflexes`),
+                    `Heading Accuracy`=mean(`Heading Accuracy`),
+                    `Interceptions`=mean(`Interceptions`),
+                    `Jumping`=mean(`Jumping`),
+                    `Long Passing`=mean(`Long Passing`),
+                    `Long Shots`=mean(`Long Shots`),
+                    `Marking`=mean(`Marking`),
+                    `Penalties`=mean(`Penalties`),
+                    `Positioning`=mean(`Positioning`),
+                    `Reactions`=mean(`Reactions`),
+                    `Short Passing`=mean(`Short Passing`),
+                    `Shot Power`=mean(`Shot Power`),
+                    `Sliding Tackle`=mean(`Sliding Tackle`),
+                    `Sprint Speed`=mean(`Sprint Speed`),
+                    `Stamina`=mean(`Stamina`),
+                    `Standing Tackle`=mean(`Standing Tackle`),
+                    `Strength`=mean(`Strength`),
+                    `Vision`=mean(`Vision`),
+                    `Volleys`=mean(`Volleys`)) %>% ungroup())
+}
+
+calc.indexes <- function(group){
+  return (group %>%  mutate( `Overall Index`=`Overall`*100/mean(`Overall`),
+                    `Value Index`=`Value`*100/mean(`Value`),
+                    `Wage Index`=`Wage`*100/mean(`Wage`),
+                    `Special Index`=`Special`*100/mean(`Special`),
+                    `Acceleration Index`=`Acceleration`*100/mean(`Acceleration`),
+                    `Aggression Index`=`Aggression`*100/mean(`Aggression`),
+                    `Agility Index`=`Agility`*100/mean(`Agility`),
+                    `Balance Index`=`Balance`*100/mean(`Balance`),
+                    `Ball Control Index`=`Ball Control`*100/mean(`Ball Control`),
+                    `Composure Index`=`Composure`*100/mean(`Composure`),
+                    `Crossing Index`=`Crossing`*100/mean(`Crossing`),
+                    `Curve Index`=`Curve`*100/mean(`Curve`),
+                    `Dribbling Index`=`Dribbling`*100/mean(`Dribbling`),
+                    `FK Accuracy Index`=`FK Accuracy`*100/mean(`FK Accuracy`),
+                    `Finishing Index`=`Finishing`*100/mean(`Finishing`),
+                    `GK Diving Index`=`GK Diving`*100/mean(`GK Diving`),
+                    `GK Handling Index`=`GK Handling`*100/mean(`GK Handling`),
+                    `GK Kicking Index`=`GK Kicking`*100/mean(`GK Kicking`),
+                    `GK Positioning Index`=`GK Positioning`*100/mean(`GK Positioning`),
+                    `GK Reflexes Index`=`GK Reflexes`*100/mean(`GK Reflexes`),
+                    `Heading Accuracy Index`=`Heading Accuracy`*100/mean(`Heading Accuracy`),
+                    `Interceptions Index`=`Interceptions`*100/mean(`Interceptions`),
+                    `Jumping Index`=`Jumping`*100/mean(`Jumping`),
+                    `Long Passing Index`=`Long Passing`*100/mean(`Long Passing`),
+                    `Long Shots Index`=`Long Shots`*100/mean(`Long Shots`),
+                    `Marking Index`=`Marking`*100/mean(`Marking`),
+                    `Penalties Index`=`Penalties`*100/mean(`Penalties`),
+                    `Positioning Index`=`Positioning`*100/mean(`Positioning`),
+                    `Reactions Index`=`Reactions`*100/mean(`Reactions`),
+                    `Short Passing Index`=`Short Passing`*100/mean(`Short Passing`),
+                    `Shot Power Index`=`Shot Power`*100/mean(`Shot Power`),
+                    `Sliding Tackle Index`=`Sliding Tackle`*100/mean(`Sliding Tackle`),
+                    `Sprint Speed Index`=`Sprint Speed`*100/mean(`Sprint Speed`),
+                    `Stamina Index`=`Stamina`*100/mean(`Stamina`),
+                    `Standing Tackle Index`=`Standing Tackle`*100/mean(`Standing Tackle`),
+                    `Strength Index`=`Strength`*100/mean(`Strength`),
+                    `Vision Index`=`Vision`*100/mean(`Vision`),
+                    `Volleys Index`=`Volleys`*100/mean(`Volleys`)
+                    
+            
+          ) %>% ungroup())
+}
+
+players <- replace.na(players %>% group_by(Team, Position))
+players <- players %>% replace(is.na(.),)
+players <- calc.indexes(players)
+
+
+teams <- summarize.metrics(players %>% group_by(Group, Team)) 
+teams <- calc.indexes(teams)
+
+remove(fifa_players)
+remove(fifa_squads)
+remove(fifa18_ids)
+remove(fifa18)
+```
+
+```{r}
+
+players.index.scaled <- scale(players %>% select(ends_with("Index")) %>% select(`Overall Index`, `Value Index`))
+```
+
+```{r}
+require(mclust)
+
+
+fit <- Mclust(players.index.scaled)
+players$cluster <- as.factor(fit$classification)
+summary(fit)
+
+```
+
+```{r}
+library(factoextra)
+fviz_nbclust(players.index.scaled, kmeans, method='silhouette')
+#fit <- kmeans(players.index.scaled, 3)
+#players$cluster <- as.factor(fit$cluster)
+```
+
+
+
+```{r}
+players %>%
+  filter(cluster==5) %>%
+  arrange(desc(`Value Index`)) %>%
+  select(Player, `Overall Index`, `Value Index`, Age.x)
+```
+
+```{r}
+players %>%
+  ggplot() +
+  geom_point(aes(x=`Value Index`, y=`Overall Index`, color=cluster), size=4, alpha=0.6) +
+  scale_color_tableau()
+```
+
+```{r}
+
+players %>% filter(cluster == 1) %>% select(Player,`Overall Index`)
+```
+
+
+
+
+
+```{r}
+players %>%
+  ggplot(aes(x=Position, y=Height)) +
+  geom_point(size=3, position = 'jitter') +
+  geom_boxplot(alpha=0.6)
+```
+
+
+
+
+```{r}
+teams %>%
+  select(Team, Value) %>%
+  arrange(desc(Value))
+```
+
+```{r}
+players %>%
+  select(ends_with('Index'))
+```
+
+```{r}
+players %>%
+  mutate(is_cluster2 = if_else(cluster==2,1,0)) %>%
+  group_by(Group) %>%
+  summarize(num_top_players=sum(is_cluster2), Overall=mean(`Overall Index`)) %>%
+  arrange(desc(`Overall`)) %>% ungroup()
+```
+
+```{r}
+img <- teams %>%
+  select(Team, Group, `Overall Index`) %>%
+  ggplot() +
+  geom_bar(aes(x=reorder(Team, `Overall Index`), y=`Overall Index`), stat='identity', fill='steelblue') +
+  scale_y_continuous(breaks=seq(0,120,20)) +
+  geom_hline(yintercept = 100) +
+  labs(y="Overall Strength (100 is World cup Average)", x="",  title="2018 FIFA World Cup: Team Strength", subtitle="by Jens Laufer, http://jenslaufer.com (Feel free to share)") +
+  coord_flip() +
+  facet_wrap(~`Group`, ncol = 4, scales = 'free_y') 
+  
+  
+ggsave("C:/Users/jensl/Documents/jenslaufer.github.io/assets/img/groups.png", width = 20, height = 10)
+
+img
+```
+
+
+```{r}
+players %>%
+  group_by(Position) %>%
+  arrange(desc(`Overall Index`)) %>%
+  slice(0:3) %>%
+  unique() %>%
+  select(Player, `Overall Index`)
+```
+
+```{r}
+
+img <- players %>%
+  group_by(Position) %>%
+  arrange(desc(`Overall Index`)) %>%
+  slice(0:10) %>%
+  unique() %>%
+  ggplot() +
+  geom_bar(aes(x=reorder(Player,`Overall Index`), y=`Overall Index`, fill=Team), stat='identity') +
+  geom_hline(yintercept = 100) +
+  scale_fill_tableau('tableau20') +
+  coord_flip()+
+  facet_wrap(~Position, scales="free", ncol= 2) +
+  labs(x='', y='Overall Index (100 is the value average of all players)', title="Best players per position of 2018 FIFA World Cup", subtitle="by Jens Laufer, http://jenslaufer.com (Feel free to share)")
+
+ggsave("C:/Users/jensl/Documents/jenslaufer.github.io/assets/img/best-players_by-position.png", width = 20, height = 10)
+
+img
+```
+
+```{r}
+players %>%
+  select(Player, Team, ends_with(' Index')) %>%
+  gather(-Player,  -Team, key="var", val="val") %>%
+  group_by(var) %>%
+  arrange(desc(val)) %>%
+  slice(0:5) %>%
+  unique() %>%
+  filter(var=="Value Index"| var == "Wage Index") %>%
+  ggplot() +
+  geom_bar(aes(x=reorder(Player, val), y=val, fill=Club.x), fill='steelblue', stat='identity') +
+  geom_hline(yintercept = 100) +
+  coord_flip() +
+  facet_wrap(~var, scales='free')
+```
+
+
+
+```{r}
+
+players %>%
+  select(Player, Team, ends_with(' Index')) %>%
+  gather(-Player,  -Team, key="var", val="val") %>%
+  group_by(var) %>%
+  arrange(desc(val)) %>%
+  slice(0:5) %>%
+  unique() %>%
+  ggplot() +
+  geom_bar(aes(x=reorder(Player, val), y=val), fill='steelblue', stat='identity') +
+  geom_hline(yintercept = 100) +
+  coord_flip() +
+  facet_wrap(~var, scales='free')
+```
+
+```{r}
+ggthemes_data$tableau$sequential
+
+```
+
+
+```{r}
+players %>%
+  select(Player, Team, Weight, Height, BMI, `Value Index`, ends_with(' Index')) %>%
+  gather(-Player, -Team, -Weight, -Height, -BMI, -`Value Index`, key="var", val="val") %>%
+  filter(var == "Overall Index" | var == "Wage Index") %>%
+  ggplot(aes(x=val, y=`Value Index`)) +
+  geom_point(alpha=0.6) +
+  scale_color_continuous_tableau(palette = "Blue-Green Sequential") +
+  geom_smooth() +
+  facet_wrap(~var)
+```
+
+```{r}
+ players %>%
+  group_by(Group, Position) %>%
+  arrange(`Overall Index`) %>%
+  slice(0:5) %>%
+  unique() %>%
+  ggplot() +
+  geom_bar(aes(x=reorder(Player, `Overall Index`), y=`Overall Index`, fill=Team), stat='identity') +
+  scale_fill_tableau('tableau20')+
+  coord_flip() +
+  facet_grid(Group~Position, scales = "free_y")
+```
+
+
+
+```{r}
+img <-  players %>%
+  group_by(Group) %>%
+  arrange(desc(`Overall Index`)) %>%
+  slice(0:10) %>%
+  unique() %>%
+  ggplot() +
+  geom_bar(aes(x=reorder(Player, `Overall Index`), y=`Overall Index`, fill=Team), stat='identity') +
+  geom_hline(yintercept = 100) +
+  scale_fill_tableau('tableau20')+ labs(x='', y='Overall Performance Index (100 is the value average of all players at World Cup)', title="Best players per Group of 2018 FIFA World Cup", subtitle="by Jens Laufer, http://jenslaufer.com (Feel free to share)") +
+  coord_flip() +
+  facet_wrap(~Group, ncol = 4 ,scales = "free")
+
+ggsave("C:/Users/jensl/Documents/jenslaufer.github.io/assets/img/most-valuable-players_by_group.png", width = 20, height = 10)
+img
+```
+
+```{r}
+players %>%
+  group_by(Position) %>%
+  arrange(desc(`Overall Index`)) %>%
+  slice(0:10) %>%
+  unique() %>%
+  ggplot() +
+  geom_bar(aes(x=reorder(Player,`Overall Index`), y=`Overall Index`, fill=Team), stat='identity') +
+  geom_hline(yintercept = 100) +
+  scale_fill_tableau('tableau20') +
+  coord_flip()+
+  facet_wrap(~Position, scales="free", ncol= 2) +
+  labs(x='', y='Overall Index (100 is the value average of all players)', title="Best players per position of 2018 FIFA World Cup", subtitle="by Jens Laufer, http://jenslaufer.com (Feel free to share)")
+```
+
+
+```{r}
+
+img <- players %>%
+  group_by(Team) %>%
+  arrange(desc(`Value Index`)) %>%
+  slice(1:4) %>%
+  ggplot() +
+  geom_bar(aes(x=reorder(Player,`Value Index`), y=`Value Index`), stat='identity', fill='steelblue') +
+  geom_hline(yintercept = 100) +
+  scale_fill_discrete(guide=FALSE) +
+  coord_flip()+
+  facet_wrap(~Team, scales="free", ncol= 4) +
+  labs(x='', y='Value Index (100 is the value average of all players)', title="Most valuable players of the different teams of 2018 FIFA World Cup", subtitle="by Jens Laufer, http://jenslaufer.com (Feel free to share)")
+
+ggsave("C:/Users/jensl/Documents/jenslaufer.github.io/assets/img/most-valuable-players_by-team.png", width = 20, height = 10)
+
+img
+  
+```
+
+
+```{r}
+MATCH.DATE <- '20/06/2018'
+HOME.TEAM <- 'Portugal'
+AWAY.TEAM <- 'Morocco'
+match.teams <- c(HOME.TEAM, AWAY.TEAM )
+teams <- teams %>%
+  filter(Team %in% match.teams)
+players <- players %>%
+  filter(Team %in% match.teams)
+  
+```
+
+
+
+
+```{r fig.height=20, fig.width=20}
+top_indexes <- teams %>%
+  select(Team, ends_with(' Index')) %>%
+  gather(-Team,  key="var", val="val") %>%
+  group_by(var) %>%
+  mutate(max=max(val), ratio = val/mean(val)) %>%
+  mutate(is.max=(val==max)) %>%
+  select(-max) %>% 
+  ungroup() %>%
+  arrange(desc(ratio)) %>%
+  select(var) %>% unique()
+
+vals <- teams %>%
+  select(Team, ends_with(' Index')) %>%
+  gather(-Team,  key="var", val="val") %>%
+  group_by(var) %>%
+  mutate(max=max(val), ratio = val/mean(val)) %>%
+  mutate(is.max=(val==max)) %>%
+  select(-max) %>% 
+  ungroup()
+
+vals <- left_join(top_indexes, vals, by="var")
+```
+
+
+
+```{r}
+img <- vals %>%
+  ggplot() +
+  geom_bar(aes(x=Team, y=val, fill=Team), stat='identity') +
+  scale_fill_tableau(guide = 'none') +
+  labs(x="", y="Index Value (100 is average across all world cup teams)", title= glue("2018 FIFA World Cup, {HOME.TEAM} vs {AWAY.TEAM} {MATCH.DATE}"), subtitle="by Jens Laufer, jenslaufer.com (Please feel free to share)") +
+  coord_flip() +
+  facet_wrap(~var, ncol = 4, scales = 'free')
+
+
+ggsave(glue("C:/Users/jensl/Documents/jenslaufer.github.io/assets/img/comparison_{HOME.TEAM}{AWAY.TEAM}.png"), width = 20, height = 10)
+
+img
+```
+
+
+
+
+```{r fig.height=10, fig.width=20}
+img <- players %>%
+  arrange(desc(`Overall Index`)) %>% 
+  ggplot() +
+  geom_bar(aes(x=reorder(Player, `Overall Index`), y=`Overall Index`, fill=Team), stat='identity') +
+  geom_hline(yintercept = 100) +
+  scale_fill_tableau(guide=FALSE) +
+  coord_flip()+
+  facet_wrap(~Team, scales="free") +
+  labs(x='', y='Overall Quality Index (100 is all world club players average)', title=glue("2018 FIFA World Cup, {HOME.TEAM} vs {AWAY.TEAM} {MATCH.DATE}", subtitle="by Jens Laufer, jenslaufer.com (Please feel free to share)"))
+
+ggsave(glue("C:/Users/jensl/Documents/jenslaufer.github.io/assets/img/value_players_{HOME.TEAM}{AWAY.TEAM}.png"), width = 20, height = 10)
+
+img
+```
+
+```{r}
+players %>%
+  ggplot() +
+  geom_boxplot(aes(x=reorder(Team, BMI, FUN=median), y=BMI))
+```
+
+
+```{r}
+players %>%
+  ggplot() +
+  geom_boxplot(aes(x=reorder(Team, -Height, FUN=median), y=Height))
+```
+
+
+
+

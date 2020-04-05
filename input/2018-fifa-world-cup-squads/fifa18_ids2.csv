@@ -1,0 +1,737 @@
+,Linked Name,Name,dist,id
+0,E. El Hadary,Essam El-Hadary,6,188033
+1,A. Gabr,Ali Gabr,2,226077
+2,A. Elmohamady,Ahmed Elmohamady,4,191005
+3,M. Haber,Omar Gaber,13,212783
+4,S. Morsy,Sam Morsy,2,197975
+5,A. Hegazi,Ahmed Hegazi,4,210648
+6,M. Al Fatil,Ahmed Fathy,8,0
+7,T. Hamed,Tarek Hamed,10,222134
+8,M. Ben Amor,Marwan Mohsen,11,211453
+9,M. Salah,Mohamed Salah,6,209331
+10,Kahraba,Kahraba,1,219740
+11,A. Aseri,Ayman Ashraf,8,228203
+12,M. Abdul Shafy,Mohamed Abdel-Shafy,9,212088
+13,R. Sobhi,Ramadan Sobhi,6,233601
+14,Momo,Mahmoud Hamdy,13,0
+15,A. Kurdy,Sherif Ekramy,11,169423
+16,M. Elneny,Mohamed Elneny,6,213051
+17,Shikabala,Shikabala,1,170828
+18,A. El-Said,Abdallah Said,11,197300
+19,Claudemir,Saad Samir,7,218430
+20,Trezeguet,Trézéguet,6,226078
+21,A. Cordaz,Amr Warda,10,233600
+22,O. Al Soma,Mohamed El-Shenawy,15,203766
+23,I. Akinfeev,Igor Akinfeev,3,148119
+24,Mário Fernandes,Mário Fernandes,0,193525
+25,I. Kutepov,Ilya Kutepov,3,210468
+26,S. Ignashevich,Sergei Ignashevich,5,112542
+27,A. Semenov,Andrei Semyonov,13,211592
+28,D. Cheryshev,Denis Cheryshev,7,206225
+29,D. Kuzyaev,Daler Kuzyayev,9,223058
+30,Y. Gazinskiy,Yury Gazinsky,7,216335
+31,A. Dzagoev,Alan Dzagoev,3,187735
+32,F. Smolov,Fyodor Smolov,8,187491
+33,R. Zobnin,Roman Zobnin,4,213160
+34,A. Lunev,Andrey Lunyov,11,229909
+35,F. Kudryashov,Fyodor Kudryashov,5,181795
+36,V. Granat,Vladimir Granat,7,187415
+37,A. Miranchuk,Aleksei Miranchuk,6,214092
+38,A. Miranchuk,Anton Miranchuk,4,222368
+39,A. Golovin,Aleksandr Golovin,8,225663
+40,Y. Zhirkov,Yuri Zhirkov,7,154950
+41,A. Samedov,Aleksandr Samedov,8,147621
+42,V. Gabulov,Vladimir Gabulov,10,147579
+43,A. Erokhin,Aleksandr Yerokhin,14,203629
+44,A. Dzyuba,Artem Dzyuba,4,187607
+45,I. Smolnikov,Igor Smolnikov,7,187347
+46,A. Al Mayoof,Abdullah Al-Mayouf,10,210140
+47,M. Al Harbi,Mansoor Al-Harbi,8,210147
+48,O. Hawsawi,Osama Hawsawi,5,191256
+49,A. Al Bulayhi,Ali Al-Bulaihi,5,229851
+50,O. Hawsawi,Omar Hawsawi,4,208914
+51,M. Al Buraik,Mohammed Al-Breik,11,221370
+52,S. Al Faraj,Salman Al-Faraj,7,191269
+53,Y. Al Shehri,Yahya Al-Shehri,8,209281
+54,H. Bahebri,Hattan Bahebri,6,208974
+55,M. Al Sahlawi,Mohammad Al-Sahlawi,9,208916
+56,A. Al Khaibari,Abdulmalek Al-Khaibri,12,191843
+57,M. Kanno,Mohamed Kanno,7,220075
+58,Y. Al Shahrani,Yasser Al-Shahrani,7,210603
+59,A. Al Khaibari,Abdullah Otayf,11,210926
+60,A. Al Khaibari,Abdullah Al-Khaibari,9,237721
+61,H. Al Moqahwi,Housain Al-Mogahwi,9,209569
+62,T. Al Jassam,Taisir Al-Jassim,8,168883
+63,S. Al Dawsari,Salem Al-Dawsari,8,210602
+64,F. Al Muwallad,Fahad Al-Muwallad,8,208977
+65,M. Asiri,Muhannad Assiri,9,210209
+66,Y. Al Mosailem,Yasser Al-Mosailem,7,197496
+67,M. Al Owais,Mohammed Al-Owais,9,210923
+68,M. Hawsawi,Motaz Hawsawi,5,225060
+69,F. Muslera,Fernando Muslera,10,182494
+70,J. Giménez,José Giménez,3,216460
+71,D. Godín,Diego Godín,4,182493
+72,Guillermo,Guillermo Varela,12,219914
+73,C. Sánchez,Carlos Sánchez (URY),5,205510
+74,R. Bentancur,Rodrigo Bentancur,6,227535
+75,Cristian Lodeira,Cristian Rodríguez,11,170664
+76,N. Nández,Nahitan Nández,6,230965
+77,L. Suárez,Luis Suárez,6,176580
+78,Martin Cordeia,Giorgian De Arrascaeta,15,225645
+79,C. Stuani,Cristhian Stuani,11,186537
+80,M. Campaña,Martín Campaña,5,225647
+81,G. Silva,Gastón Silva,5,220702
+82,L. Torreira,Lucas Torreira,4,223959
+83,M. Vecino,Matías Vecino,11,219985
+84,M. Pereira,Maxi Pereira,6,182862
+85,D. Laxalt,Diego Laxalt,4,213400
+86,M. Gómez,Maxi Gómez,9,239207
+87,S. Coates,Sebastián Coates,8,197655
+88,J. Urretaviscaya,Jonathan Urretaviscaya,7,189338
+89,E. Cavani,Edinson Cavani,6,179813
+90,M. Cáceres,Martín Cáceres,5,182495
+91,Adrien Silva,Martín Silva,16,198653
+92,Alex Berenguer,Alireza Beiranvand,17,600004
+93,M. Storari,Mehdi Torabi,11,0
+94,E. Haji Safi,Ehsan Hajsafi,12,194354
+95,R. Weir,Rouzbeh Cheshmi,16,0
+96,M. Mohammadi,Milad Mohammadi,10,233218
+97,S. Ezatolahi,Saeid Ezatolahi,4,233241
+98,M. Shojaei,Masoud Shojaei,5,188877
+99,M. Sharahili,Morteza Pouraliganji,17,0
+100,Jaim Abra,Omid Ebrahimi,14,0
+101,K. Ansarifard,Karim Ansarifard,9,197136
+102,V. Chiricheş,Vahid Amiri,12,0
+103,T. Yamashita,Mohammad Rashid Mazaheri,27,0
+104,Mata,Mohammad Reza Khanzadeh,19,0
+105,S. Ghoddos,Saman Ghoddos,8,231949
+106,Nacho Monreal,Pejman Montazeri,16,600006
+107,R. Ghoochannejhad,Reza Ghoochannejhad,6,189717
+108,M. Salem,Mehdi Taremi,12,0
+109,A. Jahanbakhsh,Alireza Jahanbakhsh,14,215871
+110,Nacho Monreal,Majid Hosseini,15,0
+111,S. Azmoun,Sardar Azmoun,5,213955
+112,A. Dejagah,Ashkan Dejagah,5,157427
+113,A. Abedzadeh,Amir Abedzadeh,6,237419
+114,R. Rezaeian,Ramin Rezaeian,7,239675
+115,Y. Bounou,Yassine Bounou,9,209981
+116,A. Hakimi,Achraf Hakimi,8,235212
+117,H. Mendyl,Hamza Mendyl,9,238346
+118,Manuel da Costa,Manuel da Costa,3,177533
+119,M. Benatia,Medhi Benatia,4,177509
+120,R. Saïss,Romain Saïss,5,208295
+121,H. Ziyech,Hakim Ziyech,4,208670
+122,K. El Ahmadi,Karim El Ahmadi,4,162329
+123,M. El Kabir,Ayoub El Kaabi,14,204102
+124,Y. Belhanda,Younès Belhanda,8,193738
+125,F. Fajr,Fayçal Fajr,8,205083
+126,Munir,Munir Mohamedi,9,223573
+127,K. Boutaïb,Khalid Boutaïb,11,210439
+128,A. Cossu,Mbark Boussoufa,15,164435
+129,Y. Aït Bennasser,Youssef Aït Bennasser,9,230042
+130,N. Amrabat,Nordin Amrabat,8,183108
+131,N. Dirar,Nabil Dirar,7,177525
+132,A. Harit,Amine Harit,7,232097
+133,Y. En-Nesyri,Youssef En-Nesyri,9,235410
+134,A. Bouhaddouz,Aziz Bouhaddouz,3,188305
+135,S. Amrabat,Sofyan Amrabat,5,224158
+136,A. Romagnoli,Ahmed Reda Tagnaouti,19,0
+137,L. Cavanda,Mehdi Carcela,12,184089
+138,Rui Patrício,Rui Patrício,0,178005
+139,Bruno Alves,Bruno Alves,0,138110
+140,Pepe,Pepe,3,120533
+141,Manuel Fernandes,Manuel Fernandes,0,157960
+142,R. Guerreiro,Raphaël Guerreiro,6,209889
+143,José Ángel,José Fonte,12,171791
+144,Cristiano Ronaldo,Cristiano Ronaldo,3,20801
+145,João Moutinho,João Moutinho,3,162347
+146,André Silva,André Silva,0,228941
+147,João Mário,João Mário,0,212814
+148,Bernardo Silva,Bernardo Silva,0,218667
+149,Rony Lopes,Anthony Lopes,11,212692
+150,Rúben Dias,Rúben Dias,3,239818
+151,William Carvalho,William Carvalho,0,207566
+152,Ricardo Pereira,Ricardo Pereira,3,210243
+153,Bruno Fernandes,Bruno Fernandes,0,212198
+154,Gonçalo Guedes,Gonçalo Guedes,3,224411
+155,Gelson Martins,Gelson Martins,0,227055
+156,Mário Rui,Mário Rui,0,204614
+157,Quaresma,Ricardo Quaresma,11,20775
+158,Cédric,Cédric,0,201118
+159,Beto,Beto,0,182629
+160,Adrien Silva,Adrien Silva,0,184826
+161,De Gea,David de Gea,6,193080
+162,Carvajal,Dani Carvajal,8,204963
+163,Piqué,Gerard Piqué,10,152729
+164,Isco,Nacho,6,200724
+165,Sergio Busquets,Sergio Busquets,3,189511
+166,André Gomes,Andrés Iniesta,7,41
+167,Saúl,Saúl,0,208421
+168,Koke,Koke,0,193747
+169,Rodrigo,Rodrigo,3,198329
+170,Thiago,Thiago,3,189509
+171,Lucas Vázquez,Lucas Vázquez,3,208618
+172,Odriozola,Álvaro Odriozola,7,234035
+173,Kepa,Kepa Arrizabalaga,19,206585
+174,Azpilicueta,César Azpilicueta,6,184432
+175,Sergio Ramos,Sergio Ramos,3,155862
+176,Nacho Monreal,Nacho Monreal,0,177604
+177,Iago Aspas,Iago Aspas,6,192629
+178,Jordi Alba,Jordi Alba,3,189332
+179,Diego Costa,Diego Costa,0,179844
+180,Marco Asensio,Marco Asensio,3,220834
+181,David Silva,David Silva,0,168542
+182,Isco,Isco,3,197781
+183,Pepe Reina,Pepe Reina,0,24630
+184,M. Ryan,Mathew Ryan,5,199005
+185,M. Degenek,Milos Degenek,4,229585
+186,J. Meredith,James Meredith,4,173450
+187,T. Cahill,Tim Cahill,2,51412
+188,M. Milligan,Mark Milligan,4,176992
+189,M. Jurman,Matthew Jurman,6,192250
+190,M. Leckie,Mathew Leckie,12,195033
+191,M. Luongo,Massimo Luongo,6,205347
+192,T. Jurić,Tomi Juric,7,213321
+193,R. Kruse,Robbie Kruse,5,182440
+194,A. Nabbout,Andrew Nabbout,5,212075
+195,B. Jones,Brad Jones,3,165735
+196,A. Mooy,Aaron Mooy,4,194958
+197,J. Maclaren,Jamie Maclaren,4,212232
+198,M. Jedinák,Mile Jedinak,4,181483
+199,A. Behich,Aziz Behich,3,202157
+200,D. Arzani,Daniel Arzani,5,234867
+201,D. Vukovic,Danny Vukovic,8,181481
+202,J. Risdon,Josh Risdon,3,202678
+203,T. Sainsbury,Trent Sainsbury,16,199000
+204,D. Petratos,Dimitri Petratos,6,202208
+205,J. Irvine,Jackson Irvine,6,211378
+206,T. Rogić,Tom Rogic,3,207928
+207,K. Schmeichel,Kasper Schmeichel,5,163587
+208,M. Krohn-Dehli,Michael Krohn-Dehli,12,159240
+209,J. Vestergaard,Jannik Vestergaard,5,202849
+210,S. Kjær,Simon Kjær,7,179645
+211,J. Knudsen,Jonas Knudsen,4,199748
+212,A. Christensen,Andreas Christensen,6,213661
+213,W. Kvist,William Kvist,13,158676
+214,T. Delaney,Thomas Delaney,8,193283
+215,N. Jørgensen,Nicolai Jørgensen,6,199852
+216,C. Eriksen,Christian Eriksen,8,190460
+217,Malcom,Martin Braithwaite,15,193290
+218,K. Dolberg,Kasper Dolberg,5,228687
+219,M. Jørgensen,Mathias Jørgensen,6,183491
+220,H. Dalsgaard,Henrik Dalsgaard,5,190633
+221,V. Fischer,Viktor Fischer,12,203965
+222,J. Lössl,Jonas Lössl,4,172553
+223,J. Stryger Larsen,Jens Stryger Larsen,3,193133
+224,Lucas Leiva,Lukas Lerager,13,217605
+225,L. Schøne,Lasse Schöne,5,172143
+226,Y. Poulsen,Yussuf Poulsen,5,207791
+227,A. Cornelius,Andreas Cornelius,6,201943
+228,F. Rønnow,Frederik Rønnow,10,201269
+229,P. Sisto,Pione Sisto,10,212196
+230,H. Lloris,Hugo Lloris,3,167948
+231,B. Pavard,Benjamin Pavard,7,226851
+232,P. Kimpembe,Presnel Kimpembe,6,225850
+233,R. Varane,Raphaël Varane,9,201535
+234,S. Umtiti,Samuel Umtiti,8,205600
+235,P. Pogba,Paul Pogba,3,195864
+236,A. Griezmann,Antoine Griezmann,6,194765
+237,T. Lemar,Thomas Lemar,8,213565
+238,O. Giroud,Olivier Giroud,6,178509
+239,K. Mbappé,Kylian Mbappé,5,231747
+240,O. Dembélé,Ousmane Dembélé,9,231443
+241,C. Tolisso,Corentin Tolisso,10,219683
+242,N. Kanté,N'Golo Kanté,5,215914
+243,B. Matuidi,Blaise Matuidi,5,170890
+244,S. N'Zonzi,Steven Nzonzi,10,187936
+245,S. Mallan,Steve Mandanda,14,163705
+246,A. Ramsey,Adil Rami,10,183280
+247,Nani,Nabil Fekir,10,216594
+248,D. Sidibé,Djibril Sidibé,9,201042
+249,A. El Ghazi,Florian Thauvin,16,204970
+250,L. Hernández,Lucas Hernández,4,220814
+251,B. Mendy,Benjamin Mendy,7,204884
+252,A. Areola,Alphonse Areola,7,193105
+253,Pedro,Pedro Gallese,12,225701
+254,J. Rodríguez,Alberto Rodríguez,11,168580
+255,G. Corral,Aldo Corzo,13,196688
+256,A. Santamaría,Anderson Santamaría,7,236260
+257,Miguel Flaño,Miguel Araujo,14,226002
+258,Miguel Veloso,Miguel Trauco,11,225706
+259,P. Hurtado,Paolo Hurtado,7,211124
+260,Cristian Herrera,Christian Cueva,12,214692
+261,D. Guerrero,Paolo Guerrero,12,150525
+262,J. Farfán,Jefferson Farfán,8,158133
+263,Raúl Albiol,Raúl Ruidíaz,11,204538
+264,O. González,Carlos Cáceda,17,234054
+265,R. Tapia,Renato Tapia,5,220673
+266,A. Polo,Andy Polo,3,223637
+267,Cristian Lodeira,Christian Ramos,12,196435
+268,L. Castiglia,Wilder Cartagena,15,221664
+269,L. Advíncula,Luis Advíncula,9,204539
+270,A. Carrillo,André Carrillo,4,203299
+271,S. Larsson,Yoshimar Yotún,16,204542
+272,J. Flores,Edison Flores,8,210951
+273,J. Carvallo,José Carvallo,6,186655
+274,N. Loyola,Nilson Loyola,10,236258
+275,P. Aquino,Pedro Aquino,10,236264
+276,Nacho,Nahuel Guzmán,11,176919
+277,G. Mercado,Gabriel Mercado,9,183892
+278,N. Tagliafico,Nicolás Tagliafico,6,211256
+279,C. Ansaldi,Cristian Ansaldi,7,173306
+280,L. Biglia,Lucas Biglia,4,158963
+281,F. Fazio,Federico Fazio,7,179847
+282,E. Banega,Éver Banega,7,178562
+283,M. Acuña,Marcos Acuña,5,224334
+284,G. Higuaín,Gonzalo Higuaín,6,167664
+285,L. Messi,Lionel Messi,8,158023
+286,A. Di María,Ángel Di María,5,183898
+287,F. Armani,Franco Armani,5,214584
+288,M. Meza,Maximiliano Meza,10,216700
+289,J. Mascherano,Javier Mascherano,21,142754
+290,M. Lanzini,Manuel Lanzini,5,188988
+291,M. Rojo,Marcos Rojo,5,201862
+292,N. Otamendi,Nicolás Otamendi,6,192366
+293,E. Salvio,Eduardo Salvio,9,190972
+294,S. Agüero,Sergio Agüero,5,153079
+295,G. Lo Celso,Giovani Lo Celso,6,226226
+296,P. Dybala,Paulo Dybala,4,211110
+297,C. Pavón,Cristian Pavón,7,224254
+298,W. Caballero,Willy Caballero,4,139062
+299,D. Lazović,Dominik Livaković,19,0
+300,S. Vrsaljko,Šime Vrsaljko,4,203890
+301,I. Strinić,Ivan Strinić,3,201139
+302,I. Perišić,Ivan Perišić,9,181458
+303,V. Ćorluka,Vedran Ćorluka,5,181786
+304,D. Lovren,Dejan Lovren,4,195086
+305,I. Rakitić,Ivan Rakitić,6,168651
+306,M. Kovačić,Mateo Kovačić,7,207410
+307,A. Kramarić,Andrej Kramarić,9,216354
+308,L. Modrić,Luka Modrić,6,177003
+309,M. Brozović,Marcelo Brozović,12,216352
+310,L. Kalinić,Lovre Kalinić,8,220932
+311,T. Jedvaj,Tin Jedvaj,5,215930
+312,Felipe Saad,Filip Bradarić,13,0
+313,D. Ćaleta-Car,Duje Ćaleta-Car,6,225263
+314,N. Kalinić,Nikola Kalinić,5,185431
+315,M. Mandžukić,Mario Mandžukić,4,181783
+316,A. Rebić,Ante Rebić,3,220018
+317,M. Badelj,Milan Badelj,4,201144
+318,M. Pjaca,Marko Pjaca,7,229593
+319,D. Vida,Domagoj Vida,9,199206
+320,José Callejón,Josip Pivarić,16,216356
+321,D. Subašić,Danijel Subašić,9,192593
+322,H. Halldórsson,Hannes Þór Halldórsson,12,206379
+323,B. Sævarsson,Birkir Már Sævarsson,13,183122
+324,S. Friðjónsson,Samúel Friðjónsson,13,224418
+325,A. Guðmundsson,Albert Guðmundsson,15,238004
+326,S. Ingason,Sverrir Ingi Ingason,14,221422
+327,R. Sigurðsson,Ragnar Sigurðsson,8,179897
+328,J. Guðmundsson,Jóhann Berg Guðmundsson,10,191076
+329,B. Bjarnason,Birkir Bjarnason,5,175789
+330,B. Sigurðarson,Björn Bergmann Sigurðarson,16,190461
+331,G. Sigurðsson,Gylfi Sigurðsson,4,184484
+332,A. Finnbogason,Alfreð Finnbogason,5,195586
+333,Naldo,Frederik Schram,16,0
+334,R. Rúnarsson,Rúnar Alex Rúnarsson,12,222562
+335,K. Árnason,Kári Árnason,3,166851
+336,P. Karlsson,Hólmar Örn Eyjólfsson,22,188916
+337,O. Skúlason,Ólafur Ingi Skúlason,11,160770
+338,A. Gunnarsson,Aron Gunnarsson,3,189167
+339,H. Magnússon,Hörður Björgvin Magnússon,14,208522
+340,R. Gíslason,Rúrik Gíslason,4,173667
+341,E. Hallfreðsson,Emil Hallfreðsson,3,133249
+342,A. Traustason,Arnór Ingvi Traustason,13,211177
+343,J. Böðvarsson,Jón Daði Böðvarsson,7,212992
+344,L. Mareček,Ari Freyr Skúlason,16,179899
+345,Nacho,Ikechukwu Ezenwa,16,0
+346,B. Idowu,Brian Idowu,4,212054
+347,Emerson Avintes,Elderson Echiéjilé,19,185089
+348,O. Ndidi,Wilfred Ndidi,7,226790
+349,W. Troost-Ekong,William Troost-Ekong,6,213414
+350,L. Balogun,Leon Balogun,10,188182
+351,A. Musa,Ahmed Musa,4,201818
+352,Tana,Oghenekaro Etebo,13,0
+353,O. Gonzalez,Odion Ighalo,18,185195
+354,J. Obita,John Obi Mikel,17,164477
+355,V. Moses,Victor Moses,5,172962
+356,S. Abdullahi,Shehu Abdullahi,4,229026
+357,M. Capuano,Simeon Nwankwo,11,219496
+358,K. Iheanacho,Kelechi Iheanacho,6,225719
+359,J. Obi,Joel Obi,3,193337
+360,Daniel Amora,Daniel Akpeyi,15,0
+361,O. Onazi,Ogenyi Onazi,5,202934
+362,A. Iwobi,Alex Iwobi,3,213655
+363,Juan Villar,John Ogu,17,199866
+364,C. Awaziem,Chidozie Awaziem,10,232693
+365,T. Ebuehi,Tyronne Ebuehi,6,224213
+366,K. Omeruo,Kenneth Omeruo,10,207624
+367,F. Uzoho,Francis Uzoho,12,239120
+368,Alisson,Alisson,0,212831
+369,Thiago Silva,Thiago Silva,0,164240
+370,Miranda,Miranda,6,168609
+371,Pedro Neto,Pedro Geromel,9,170802
+372,Casemiro,Casemiro,3,200145
+373,Filipe Luís,Filipe Luís,0,164169
+374,Douglas Costa,Douglas Costa,0,190483
+375,Renato Augusto,Renato Augusto,17,169195
+376,Gabriel Jesus,Gabriel Jesus,0,230666
+377,Neymar,Neymar,0,190871
+378,Coutinho,Philippe Coutinho,12,189242
+379,Marcelo,Marcelo,3,176676
+380,Marquinhos,Marquinhos,0,207865
+381,Danilo,Danilo,0,199304
+382,Paulinho,Paulinho,3,187961
+383,F. Borini,Cássio,11,165769
+384,Fernandinho,Fernandinho,0,135507
+385,Fred,Fred,0,209297
+386,Willian,Willian,0,180403
+387,Roberto Firmino,Roberto Firmino,0,201942
+388,Taison,Taison,0,188803
+389,F. Borini,Fagner,10,183614
+390,Ederson,Ederson,0,210257
+391,K. Navas,Keylor Navas,8,193041
+392,J. Acosta,Johnny Acosta,5,216780
+393,G. González,Giancarlo González,8,208379
+394,I. Smith,Ian Smith,6,242551
+395,C. Borges,Celso Borges,10,190799
+396,O. Duarte,Óscar Duarte,9,212772
+397,Cristiano,Christian Bolaños,14,175753
+398,B. Oviedo,Bryan Oviedo,4,198335
+399,Daniel Candeias,Daniel Colindres,12,0
+400,B. Ruíz,Bryan Ruiz,5,176949
+401,G. Venegas,Johan Venegas,12,229996
+402,F. Campbell,Joel Campbell,11,204713
+403,R. Wallace,Rodney Wallace,16,190588
+404,Raul Asencio,Randall Azofeifa,15,175749
+405,F. Calvo,Francisco Calvo,8,213064
+406,C. Gamboa,Cristian Gamboa,7,198553
+407,L. Kinsella,Yeltsin Tejeda,15,216810
+408,T. Pemberton,Patrick Pemberton,17,0
+409,K. Waston,Kendall Waston,6,216811
+410,D. Guzman,David Guzmán,5,236999
+411,Marcelo,Marco Ureña,14,202896
+412,R. Matarrita,Rónald Matarrita,16,232230
+413,L. Del Prete,Leonel Moreira,13,0
+414,Vitor Hugo,Vladimir Stojković,17,167993
+415,A. Rukavina,Antonio Rukavina,9,181816
+416,D. Tošić,Duško Tošić,7,176377
+417,L. Milivojević,Luka Milivojević,3,206304
+418,U. Spajić,Uroš Spajić,7,215892
+419,B. Ivanović,Branislav Ivanović,12,178372
+420,A. Živković,Andrija Živković,9,220746
+421,Alex Sandro,Aleksandar Prijović,16,189757
+422,A. Mitrović,Aleksandar Mitrović,9,215716
+423,D. Tadić,Dušan Tadić,4,199434
+424,A. Kolarov,Aleksandar Kolarov,9,185103
+425,S. Rajković,Predrag Rajković,21,183606
+426,M. Veljković,Miloš Veljković,7,221354
+427,O. Gnjatić,Milan Rodić,17,213163
+428,N. Milenković,Nikola Milenković,5,238095
+429,M. Grujić,Marko Grujić,4,232099
+430,F. Kostić,Filip Kostić,4,208574
+431,O. Gnjatić,Nemanja Radonjić,20,0
+432,L. Jović,Luka Jović,3,232432
+433,S. Milinković-Savić,Sergej Milinković-Savić,5,223848
+434,N. Matić,Nemanja Matić,6,191202
+435,A. Ljajić,Adem Ljajić,3,190544
+436,M. Dmitrović,Marko Dmitrović,7,227290
+437,Y. Sommer,Yann Sommer,3,177683
+438,S. Lichtsteiner,Stephan Lichtsteiner,6,108080
+439,F. Moubandje,François Moubandje,10,198067
+440,N. Elvedi,Nico Elvedi,3,221491
+441,M. Akanji,Manuel Akanji,5,229237
+442,M. Lang,Michael Lang,9,184501
+443,B. Embolo,Breel Embolo,7,222357
+444,R. Freuler,Remo Freuler,3,202024
+445,H. Seferović,Haris Seferović,7,193408
+446,G. Xhaka,Granit Xhaka,5,199503
+447,V. Behrami,Valon Behrami,4,161805
+448,Y. Mvogo,Yvon Mvogo,3,206003
+449,R. Rodríguez,Ricardo Rodríguez,6,193352
+450,S. Zuber,Steven Zuber,9,190059
+451,B. Džemaili,Blerim Džemaili,5,138699
+452,Gelson Fernandes,Gelson Fernandes,0,158438
+453,D. Zakaria,Denis Zakaria,4,229261
+454,Mario Gaspar,Mario Gavranović,17,179565
+455,J. Drmić,Josip Drmić,4,198504
+456,J. Djourou,Johan Djourou,4,162893
+457,R. Bürki,Roman Bürki,4,189117
+458,F. Schär,Fabian Schär,11,210047
+459,X. Shaqiri,Xherdan Shaqiri,6,193348
+460,M. Neuer,Manuel Neuer,8,167495
+461,M. Plattenhardt,Marvin Plattenhardt,12,192557
+462,J. Hector,Jonas Hector,4,208334
+463,M. Ginter,Matthias Ginter,7,207862
+464,M. Hummels,Mats Hummels,6,178603
+465,S. Khedira,Sami Khedira,3,179846
+466,J. Draxler,Julian Draxler,5,202166
+467,T. Kroos,Toni Kroos,6,182521
+468,T. Werner,Timo Werner,3,212188
+469,M. Özil,Mesut Özil,4,176635
+470,M. Reus,Marco Reus,4,188350
+471,K. Trapp,Kevin Trapp,4,188943
+472,T. Müller,Thomas Müller,8,189596
+473,L. Goretzka,Leon Goretzka,6,209658
+474,N. Süle,Niklas Süle,8,212190
+475,A. Rüdiger,Antonio Rüdiger,6,205452
+476,J. Boateng,Jérôme Boateng,8,183907
+477,J. Kimmich,Joshua Kimmich,8,212622
+478,S. Rudy,Sebastian Rudy,11,189251
+479,J. Brandt,Julian Brandt,8,212194
+480,I. Gündoğan,İlkay Gündoğan,5,186942
+481,M. ter Stegen,Marc-André ter Stegen,12,192448
+482,M. Gómez,Mario Gómez,4,150418
+483,J. Corona,José de Jesús Corona,12,156412
+484,Suso,Hugo Ayala,10,171896
+485,C. Salcedo,Carlos Salcedo,5,212888
+486,R. Márquez,Rafael Márquez,10,26709
+487,D. Reyes,Diego Reyes,7,192012
+488,João Pedro,Jonathan dos Santos,14,170370
+489,M. Layún,Miguel Layún,8,178322
+490,M. Fabián,Marco Fabián,4,186307
+491,R. Jiménez,Raúl Jiménez,6,204838
+492,João Pedro,Giovani dos Santos,14,170369
+493,Carlos Alves,Carlos Vela,12,169416
+494,A. Sagal,Alfredo Talavera,14,156433
+495,G. Ochoa,Guillermo Ochoa,11,140233
+496,J. Hernández,Javier Hernández,5,178224
+497,H. Moreno,Héctor Moreno,5,173432
+498,H. Herrera,Héctor Herrera,8,156519
+499,J. Corona,Jesús Manuel Corona,14,193165
+500,A. Guardado,Andrés Guardado,14,171897
+501,O. Peralta,Oribe Peralta,9,158543
+502,Samir,Javier Aquino,12,192350
+503,E. Álvarez,Edson Álvarez,9,235844
+504,H. Lozano,Hirving Lozano,16,221992
+505,J. Gallardo,Jesús Gallardo,8,226045
+506,Kim Seung Gyu,Kim Seung-gyu,2,191655
+507,Lee Yong,Lee Yong,0,200577
+508,Jeong Seung Hyun,Jung Seung-hyun,4,227790
+509,Oh Ban Suk,Oh Ban-suk,5,207753
+510,Kim Young Sin,Yun Young-sun,12,199238
+511,Park Joo Ho,Park Joo-ho,11,191566
+512,J. Vertonghen,Son Heung-min,10,200104
+513,J. Serrano,Ju Se-jong,15,208063
+514,Kim Shin Wook,Kim Shin-wook,2,191910
+515,Lee Seung Woo,Lee Seung-woo,2,232000
+516,Hwang Hee Chan,Hwang Hee-chan,5,226380
+517,Kim Min Woo,Kim Min-woo,5,218471
+518,Koo Ja Cheol,Koo Ja-cheol,2,182152
+519,Hong Chul,Hong Chul,3,199236
+520,Jung Woo Young,Jung Woo-young,2,211003
+521,Ki Sung Yueng,Ki Sung-yueng,2,180283
+522,Lee Jae Sung,Lee Jae-sung,2,221671
+523,Moon Seon Min,Moon Seon-min,5,229694
+524,Kim Young Sin,Kim Young-gwon,18,191897
+525,Jang Hyeon Soo,Jang Hyun-soo,6,211005
+526,Kim Jin Hyeon,Kim Jin-hyeon,2,201936
+527,Go Yo Han,Go Yo-han,2,184337
+528,Cho Hyun Woo,Cho Hyun-woo,2,212432
+529,R. Olsen,Robin Olsen,11,207557
+530,M. Lustig,Mikael Lustig,5,176942
+531,V. Lindelöf,Victor Lindelöf,5,221660
+532,A. Granqvist,Andreas Granqvist,9,156713
+533,M. Olsson,Martin Olsson,5,184472
+534,L. Augustinsson,Ludwig Augustinsson,8,212678
+535,S. Larsson,Sebastian Larsson,8,164459
+536,A. Ekdal,Albin Ekdal,4,181318
+537,M. Berg,Marcus Berg,10,176733
+538,E. Forsberg,Emil Forsberg,3,208448
+539,J. Geis,John Guidetti,12,199602
+540,M. Coco,Karl-Johan Johnsson,16,190120
+541,G. Svensson,Gustav Svensson,5,177448
+542,F. Helander,Filip Helander,4,207555
+543,O. Hiljemark,Oscar Hiljemark,4,202944
+544,E. Krafth,Emil Krafth,3,207650
+545,V. Claesson,Viktor Claesson,8,207554
+546,P. Jansson,Pontus Jansson,5,194201
+547,M. Rohdén,Marcus Rohdén,5,207553
+548,O. Toivonen,Ola Toivonen,5,176794
+549,J. Durmaz,Jimmy Durmaz,7,189207
+550,I. Kiese Thelin,Isaac Kiese Thelin,4,205985
+551,K. Nordfeldt,Kristoffer Nordfeldt,9,192129
+552,T. Courtois,Thibaut Courtois,6,192119
+553,T. Alderweireld,Toby Alderweireld,3,184087
+554,Jordi Alba,Thomas Vermaelen,13,157304
+555,V. Kompany,Vincent Kompany,6,139720
+556,J. Vertonghen,Jan Vertonghen,2,172871
+557,A. Witsel,Axel Witsel,16,177413
+558,K. De Bruyne,Kevin De Bruyne,4,192985
+559,M. Fellaini,Marouane Fellaini,7,176944
+560,R. Lukaku,Romelu Lukaku,5,192505
+561,E. Hazard,Eden Hazard,3,183277
+562,Y. Carrasco,Yannick Carrasco,16,208418
+563,S. Mignolet,Simon Mignolet,4,173426
+564,K. Casteels,Koen Casteels,3,192984
+565,D. Mertens,Dries Mertens,4,175943
+566,T. Meunier,Thomas Meunier,5,202371
+567,T. Hazard,Thorgan Hazard,6,203486
+568,Y. Tielemans,Youri Tielemans,7,216393
+569,A. Januzaj,Adnan Januzaj,4,208330
+570,M. Dembélé,Mousa Dembélé,4,162240
+571,D. Boyata,Dedryck Boyata,6,197837
+572,M. Batshuayi,Michy Batshuayi,4,204529
+573,N. Chadli,Nacer Chadli,4,200529
+574,L. Dendoncker,Leander Dendoncker,10,212501
+575,J. Pickford,Jordan Pickford,5,204935
+576,K. Walker,Kyle Walker,3,188377
+577,D. Rose,Danny Rose,4,169595
+578,E. Dier,Eric Dier,3,202335
+579,J. Stones,John Stones,3,203574
+580,H. Maguire,Harry Maguire,4,203263
+581,J. Lingard,Jesse Lingard,4,207494
+582,J. Henderson,Jordan Henderson,5,183711
+583,H. Kane,Harry Kane,4,202126
+584,R. Sterling,Raheem Sterling,5,202652
+585,J. Vardy,Jamie Vardy,4,208830
+586,K. Trippier,Kieran Trippier,5,186345
+587,J. Butland,Jack Butland,3,203042
+588,D. Welbeck,Danny Welbeck,4,186146
+589,G. Cahill,Gary Cahill,3,164468
+590,P. Jones,Phil Jones,3,194957
+591,F. Delph,Fabian Delph,5,183427
+592,A. Young,Ashley Young,5,152908
+593,M. Rashford,Marcus Rashford,5,231677
+594,D. Alli,Dele Alli,3,211117
+595,R. Loftus-Cheek,Ruben Loftus-Cheek,4,213666
+596,T. Alexander-Arnold,Trent Alexander-Arnold,4,231281
+597,N. Pope,Nick Pope,3,203841
+598,Danilo Pereira,Jaime Penedo,18,174745
+599,M. Murillo,Michael Amir Murillo,11,237841
+600,H. Cummings,Harold Cummings,5,217054
+601,F. Escobar,Fidel Escobar,4,240196
+602,R. Torres,Román Torres,4,214506
+603,G. Gómez,Gabriel Gómez,6,174732
+604,L. Pérez,Blas Pérez,11,174746
+605,R. Herrera,Édgar Bárcenas,14,600007
+606,K. Hidalgo,Gabriel Torres,12,174754
+607,Alcatraz,Ismael Díaz,13,231867
+608,A. Cooper,Armando Cooper,6,215163
+609,José Callejón,José Calderón,10,0
+610,A. Machado,Adolfo Machado,5,197154
+611,E. Pimentel,Valentín Pimentel,18,231875
+612,Erik Morán,Erick Davis,17,0
+613,Daniel Amora,Abdiel Arroyo,15,235252
+614,Luis Marleiro,Luis Ovalle,10,187259
+615,Luis Alberto,Luis Tejada,14,174753
+616,J. Quintero,Alberto Quintero,15,194415
+617,A. Godoy,Aníbal Godoy,5,217047
+618,C. Rodríguez,José Luis Rodríguez,12,0
+619,C. Rodríguez,Álex Rodríguez,14,0
+620,Felipe Saad,Felipe Baloy,12,139882
+621,F. Ben Mustapha,Farouk Ben Mustapha,6,218216
+622,S. Ben Youssef,Syam Ben Youssef,7,207788
+623,Y. Benalouane,Yohan Benalouane,4,183288
+624,Fran Mérida,Yassine Meriah,16,0
+625,O. Haddadi,Oussama Haddadi,10,237548
+626,A. Begović,Rami Bedoui,18,0
+627,S. Khaoui,Saîf-Eddine Khaoui,16,220029
+628,F. Ben Youssef,Fakhreddine Ben Youssef,16,218214
+629,A. Barnes,Anice Badri,12,223219
+630,Rafinha,Wahbi Khazri,12,194845
+631,D. Bronn,Dylan Bronn,8,235565
+632,A. Majrashi,Ali Maâloul,9,0
+633,F. Sassi,Ferjani Sassi,7,218215
+634,M. Ben Amor,Mohamed Amine Ben Amor,13,241753
+635,A. Díaz,Ahmed Khalil,13,0
+636,A. Mathlouthi,Aymen Mathlouthi,5,195834
+637,R. Funes Mori,Ellyes Skhiri,15,225126
+638,B. Srarfi,Bassem Srarfi,9,237600
+639,O. Peralta,Saber Khalifa,13,204194
+640,Charles,Ghailene Chaalali,17,0
+641,M. Banguera,Hamdi Nagguez,13,0
+642,J. Al Hussien,Mouez Hassen,15,209483
+643,N. Sliti,Naïm Sliti,7,205257
+644,D. Ospina,David Ospina,4,176550
+645,C. Zapata,Cristián Zapata,7,177983
+646,O. Murillo,Óscar Murillo,5,198581
+647,Thiago Maia,Santiago Arias,16,204259
+648,W. Barrios,Wílmar Barrios,5,214394
+649,Victor Sánchez,Carlos Sánchez (COL),9,182882
+650,C. Bacca,Carlos Bacca,8,207664
+651,L. Arias,Abel Aguilar,12,177974
+652,R. Ghezzal,Radamel Falcao,10,167397
+653,J. Rodríguez,James Rodríguez,7,198710
+654,J. Cuadrado,Juan Cuadrado,3,193082
+655,Nando,Camilo Vargas,13,212067
+656,Y. Mina,Yerry Mina,7,220523
+657,L. Muriel,Luis Muriel,6,199110
+658,M. Uribe,Mateus Uribe,10,214047
+659,Jefferson,Jefferson Lerma,11,213991
+660,J. Mojica,Johan Mojica,7,214026
+661,F. Fabra,Frank Fabra,4,214040
+662,Miguel Veloso,Miguel Borja,12,219862
+663,J. Quintero,Juan Fernando Quintero,12,210513
+664,J. Izquierdo,José Izquierdo,3,219411
+665,Jorge Fernandes,José Fernando Cuadrado,19,214110
+666,D. Sánchez,Dávinson Sánchez,7,220793
+667,E. Kawashima,Eiji Kawashima,6,180739
+668,N. Ueda,Naomichi Ueda,7,232870
+669,G. Shoji,Gen Shoji,2,232869
+670,K. Honda,Keisuke Honda,6,186581
+671,Y. Nagatomo,Yuto Nagatomo,6,194359
+672,W. Endo,Wataru Endo,5,232487
+673,G. Shibasaki,Gaku Shibasaki,6,232883
+674,G. Haraguchi,Genki Haraguchi,4,217648
+675,S. Okazaki,Shinji Okazaki,5,194365
+676,S. Kagawa,Shinji Kagawa,5,189358
+677,T. Usami,Takashi Usami,6,191388
+678,M. Higashiguchi,Masaaki Higashiguchi,6,232441
+679,Y. Mutō,Yoshinori Mutō,12,228717
+680,Capa,Takashi Inui,9,205114
+681,Y. Ōsako,Yuya Osako,4,191565
+682,H. Yamaguchi,Hotaru Yamaguchi,5,222987
+683,M. Hasebe,Makoto Hasebe,5,181098
+684,R. Oshima,Ryota Oshima,4,233147
+685,H. Mkhitaryan,Hiroki Sakai,14,208520
+686,T. Makino,Tomoaki Makino,6,194361
+687,G. Sakai,Gōtoku Sakai,5,207472
+688,M. Yoshida,Maya Yoshida,3,191648
+689,K. Nakamura,Kosuke Nakamura,5,232562
+690,W. Szczęsny,Wojciech Szczęsny,7,186153
+691,M. Pazdan,Michał Pazdan,7,185010
+692,A. Jędrzejczyk,Artur Jędrzejczyk,6,177790
+693,Thiago Cionek,Thiago Cionek,10,189118
+694,J. Bednarek,Jan Bednarek,2,220570
+695,J. Góralski,Jacek Góralski,21,229739
+696,A. Milik,Arkadiusz Milik,8,205175
+697,K. Linetty,Karol Linetty,4,211408
+698,R. Lewandowski,Robert Lewandowski,8,188545
+699,G. Krychowiak,Grzegorz Krychowiak,7,197242
+700,K. Grosicki,Kamil Grosicki,4,177922
+701,B. Białkowski,Bartosz Białkowski,6,155871
+702,M. Rybus,Maciej Rybus,5,186347
+703,L. Teodorczyk,Łukasz Teodorczyk,10,201013
+704,K. Glik,Kamil Glik,7,190547
+705,J. Błaszczykowski,Jakub Błaszczykowski,4,164994
+706,S. Peszko,Sławomir Peszko,7,148564
+707,B. Bereszyński,Bartosz Bereszyński,6,199763
+708,P. Zieliński,Piotr Zieliński,4,210406
+709,L. Piszczek,Łukasz Piszczek,6,173771
+710,R. Kurzawa,Rafał Kurzawa,4,221791
+711,L. Fabiański,Łukasz Fabiański,6,164835
+712,D. Kownacki,Dawid Kownacki,4,221168
+713,A. Ba,Abdoulaye Diallo,14,197233
+714,S. Ciss,Saliou Ciss,8,198687
+715,K. Koulibaly,Kalidou Koulibaly,6,201024
+716,K. Mbodji,Kara Mbodji,7,198584
+717,I. Gueye,Idrissa Gueye,6,193474
+718,S. Sané,Salif Sané,4,201956
+719,M. Sow,Moussa Sow,5,172124
+720,C. Kouyaté,Cheikhou Kouyaté,7,186801
+721,M. Diouf,Mame Biram Diouf,9,187084
+722,S. Mané,Sadio Mané,4,208722
+723,C. N'Doye,Cheikh N'Doye,5,219470
+724,Yu Dabao,Youssouf Sabaly,15,215699
+725,A. N'Diaye,Alfred N'Diaye,5,188879
+726,Mossa,Moussa Konaté,11,211321
+727,D. Santon,Diafra Sakho,11,193554
+728,L. N'Diaye,Khadim N'Diaye,12,0
+729,B. Ndiaye,Badou Ndiaye,4,221000
+730,P. Dybala,Ismaïla Sarr,13,235353
+731,M. Niang,M'Baye Niang,5,204077
+732,K. Baldé,Keita Baldé,7,215785
+733,L. Gassama,Lamine Gassama,5,189944
+734,M. Wagué,Moussa Wagué,9,237156
+735,Alisson,Alfred Gomis,12,201976
